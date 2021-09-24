@@ -9,21 +9,35 @@
 </head>
 
 <style>
-    div{
-        background-color: chartreuse;
-        box-sizing:border-box;
-        height: 100px;
-        width: 100px;
-        border: solid;
-        padding-top: 18px;
-        margin-left: 1100px;
+    *
+    {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
     }
+
+  
+    .parent
+    { 
+        background-color: chartreuse;
+        height: 60px;
+        padding:20px; 
+        width: 100px;
+    }
+
+    .child
+    {
+        background-color:blueviolet;
+        height: 20px;
+        width: 100px;
+    }
+
+
 </style>
 
-<div >
-    <h1>
-        Hello!
-    </h1>
+<div class="parent">
+    <div class="child">
+    </div>
 </div>
 
 <body>
