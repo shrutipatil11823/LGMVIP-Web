@@ -9,25 +9,48 @@
 </head>
 
 <style>
-    *
+    div.Parent
     {
-        margin:0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family:fantasy
+        background: black;
+        color: bisque;
+        font-size: 2rem;
     }
 
-    h1{
-        background-color:greenyellow;
-        padding: 10px;
-        padding-left: 80%;
-        padding-top: 40%;
+
+    @media (max-width:700px)
+    {
+        div.Parent{
+            background-color: chartreuse;
+            font-size: 0.8rem;
+        }
+    }
+
+    @media (max-width:500px)
+    {
+        div.Parent{
+            background-color:coral;
+            font-size: 0.8rem;
+        }
 
     }
+
+
 </style>
 
 <body>
-    <h1>position</h1>
+
+    <div class="Parent">
+        <h1>
+            Heading 
+        </h1>
+        Hmmm… can't reach this pagewww.bing.com’s server IP address could not be found.
+        Try:
+        
+        Checking the connection
+        Checking the proxy, firewall, and DNS settings.
+        Running Windows Network Diagnostics
+        ERR_NAME_NOT_RESOLVED
+    </div>
 </body>
 
 </html>
