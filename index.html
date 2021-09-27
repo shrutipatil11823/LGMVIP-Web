@@ -11,45 +11,53 @@
 <style>
     div.Parent
     {
-        background: black;
-        color: bisque;
-        font-size: 2rem;
+        display:flex;
+        align-items: stretch;
+        background-color: coral;
+        height: 100vh;
+    }
+
+    div.chid
+    {
+        background-color: cornsilk;
+        flex-basis: 80%;
+    }
+
+    div.sidebar
+    {
+        background-color: crimson;
+        flex-basis: 20%;
     }
 
 
-    @media (max-width:700px)
+    @media (max-width:550px)
     {
-        div.Parent{
-            background-color: chartreuse;
-            font-size: 0.8rem;
+        div.sidebar{
+            animation: 5s expand linear infinite;
+        }
+        div: .child;{
+            flex-basis: 100%;
         }
     }
 
-    @media (max-width:500px)
+    @keyframes expand
     {
-        div.Parent{
-            background-color:coral;
-            font-size: 0.8rem;
+        0%{
+            flex-basis: 0%;
         }
-
+        100%
+        {
+            flex-basis: 50%;
+        }
     }
-
 
 </style>
 
 <body>
 
     <div class="Parent">
-        <h1>
-            Heading 
-        </h1>
-        Hmmm… can't reach this pagewww.bing.com’s server IP address could not be found.
-        Try:
-        
-        Checking the connection
-        Checking the proxy, firewall, and DNS settings.
-        Running Windows Network Diagnostics
-        ERR_NAME_NOT_RESOLVED
+        <div class="sidebar"></div>
+        <div class="child"></div>
     </div>
 </body>
 
