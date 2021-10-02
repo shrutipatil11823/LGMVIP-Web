@@ -1,64 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<title>GIT & GITHUB</title>
+<style>
+    body {
+        background-color:white;
+    }
 
+    *
+    {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        border: 0px;
+        outline:none;
+    }
+
+    .card-container
+    {
+        margin: 20px 10px;
+        position: relative;
+        padding: 10px;
+        min-height: 500px;
+    }
+
+    .card-one
+    {
+        max-height: 300px;
+        max-width:300px;
+        background-color:white;
+        border-radius: 15px;
+    }
+
+    .card-body
+    {
+        padding: 10px 15px;
+    }
+
+    .Date
+    {
+        background-color:indigo;
+        color: white;
+        width: 45px;
+        height: 45px;
+        padding: 10px;
+        border-radius: 50%;
+        text-align: center;
+        font-weight: 900;
+        font-size: 0.8rem;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .banner
+    {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .card-body{
+        padding: 15px 45px;
+        text-align: center;
+        width: 300px;
+    }
+
+    .travel
+    {
+        background-color: red;
+        color: white;
+        font-size: 1.3rem;
+        border-radius: 10 px;
+        width: auto;
+        margin: 0px auto;
+        padding: 5px;
+        display: block;
+        position: relative;
+        top: 15px;
+   
+    }
+
+
+    
+</style>
 </head>
 
-<style>
-    div.Parent
-    {
-        display:flex;
-        align-items: stretch;
-        background-color: coral;
-        height: 100vh;
-    }
-
-    div.chid
-    {
-        background-color: cornsilk;
-        flex-basis: 80%;
-    }
-
-    div.sidebar
-    {
-        background-color: crimson;
-        flex-basis: 20%;
-    }
-
-
-    @media (max-width:550px)
-    {
-        div.sidebar{
-            animation: 5s expand linear infinite;
-        }
-        div: .child;{
-            flex-basis: 100%;
-        }
-    }
-
-    @keyframes expand
-    {
-        0%{
-            flex-basis: 0%;
-        }
-        100%
-        {
-            flex-basis: 50%;
-        }
-    }
-
-</style>
-
 <body>
+<header>
+   <div class="card-container">
+        <div class="card-one">
 
-    <div class="Parent">
-        <div class="sidebar"></div>
-        <div class="child"></div>
-    </div>
+            <div class="Date">11</div>
+            <img  class="banner" src="https://i1.wp.com/geoawesomeness.com/wp-content/uploads/2017/09/Coding-Geospatial.jpg" alt="">
+
+        </div> 
+
+        <div class="card-body">
+                <h1>Coding</h1>
+                <div>
+                    <small>Lorem ipsum dolor sit am
+                        et consectetur adipisicing elit. Asperiores fugiat placeat,
+                        ipsa voluptate officia molestiae sequi impedit deserunt
+                         aliquid! Quis facilis minus assumenda q
+                        uod quidem corporis atque quisquam, reprehenderit error.</small>
+                </div>
+            <div class="travel">Visit Coding!!</div>    
+      
+        </div>
+       
+   </div>
+</header>
 </body>
 
-</html>
+</html> 
