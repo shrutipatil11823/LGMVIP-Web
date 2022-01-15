@@ -1,6 +1,13 @@
-var arr=[1,2,3,4]
+var list =document.querySelector('ul')
 
-console.log(typeof arr ) 
-arr.push[10]git 
 
-console.log(arr)
+var arr = ['Go to Gym','cook oatmeal','Eat']
+arr.push('Resign')
+
+for (var i=0;i<arr.length;i++)
+{
+    var element =document.createElement('li')
+    var textnode = document.createTextNode(arr[i])
+    element.appendChild(textnode)
+    list.appendChild(element)
+}
