@@ -1,13 +1,18 @@
-var list =document.querySelector('ul')
-
-
-var arr = ['Go to Gym','cook oatmeal','Eat']
-arr.push('Resign')
-
-for (var i=0;i<arr.length;i++)
+var show =function (Name,Age)
 {
-    var element =document.createElement('li')
-    var textnode = document.createTextNode(arr[i])
-    element.appendChild(textnode)
-    list.appendChild(element)
+    console.log(Name,Age)
+
 }
+
+console.log(show('Anisha','12'))
+
+/*
+var add = function (a = 0, b = 0) 
+{
+    var sum = a + b
+    return sum
+    //console.log(a+b)
+}
+
+console.log(add(10,53))
+*/
