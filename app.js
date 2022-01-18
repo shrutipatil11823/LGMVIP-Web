@@ -1,7 +1,14 @@
-var add =(a=0,b=0) =>
+var arr = ["go to gym",'Eat food',"clean house"]
+for(var i=0 ; i<arr.length;i++)
 {
-    var sum=a+b
-    return sum
+    console.log(arr[i])
 }
 
-console.log(add (20,30))
+var callbackfunction = (element,index) => {
+    console.log(element,index)
+}
+
+arr.forEach(callbackfunction)
+{
+    console.log(element,index)
+}
