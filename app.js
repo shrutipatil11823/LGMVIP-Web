@@ -1,14 +1,14 @@
-var arr = ["go to gym",'Eat food',"clean house"]
-for(var i=0 ; i<arr.length;i++)
+var button =document.querySelector("button")
+var input =document.querySelector("input")
+var list = document.querySelector("ul")
+
+const callbackfun = (event) =>
 {
-    console.log(arr[i])
+    const inputValue = input.value
+    const element = document.createElement("li")
+    const textNode = document.createTextNode(inputValue)
+    element.appendChild(textNode)
+    list.appendChild(element)
 }
 
-var callbackfunction = (element,index) => {
-    console.log(element,index)
-}
-
-arr.forEach(callbackfunction)
-{
-    console.log(element,index)
-}
+button.addEventListener("click",callbackfun)
