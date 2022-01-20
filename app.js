@@ -1,10 +1,9 @@
+var body =document.querySelector("body")
 var button =document.querySelector("button")
-var input =document.querySelector("input")
-var list = document.querySelector("ul")
 
 const callbackfun = (event) =>
 {
-   console.log(input.value)
+    body.classList.toggle("dark")
 }
 
 button.addEventListener("click",callbackfun)
