@@ -6,39 +6,23 @@ const subtract=document.querySelector("#subtract")
 const division=document.querySelector("#division")
 const resultBox = document.querySelector(".result")
 
-/*
-const into = () =>
-{
-    const result =parseInt (a.value) * parseInt(b.value)
-    resultBox.innerHTML = result
-}
-
-
-*/
-
 const calculator = (event,operation) =>
 {
-    console.log(event.target)
-    if (operation=="add")
-    {
-        const result=parseInt(a.value)+parseInt(b.value)
-        console.log(result)
-    }
-    else if(operation=="multiply")
-    {
-        const result=parseInt(a.value)*parseInt(b.value)
-        console.log(result)
-    }
-    else if(operation=="subtract")
-    {
-        const result=parseInt(a.value)-parseInt(b.value)
-        console.log(result)
-    }
-    else if(operation=="division")
-    {
-        const result=parseInt(a.value)/parseInt(b.value)
-        console.log(result)
-    }
+  switch (operation)
+  {
+    case "add":
+        resultBox.innerHTML=parseInt(a.value)+parseInt(b.value)
+        break;
+    case "multiply":
+        resultBox.innerHTML=parseInt(a.value)*parseInt(b.value)
+        break;
+    case "subtract":
+        resultBox.innerHTML=parseInt(a.value)-parseInt(b.value)
+        break;
+    case "division":
+        resultBox.innerHTML=parseInt(a.value)/parseInt(b.value)
+        break;
+  }
 }
 add.addEventListener('click',(event) => calculator(event,"add"))
 
