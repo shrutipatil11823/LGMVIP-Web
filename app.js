@@ -1,9 +1,49 @@
-var body =document.querySelector("body")
-var button =document.querySelector("button")
+const a = document.querySelectorAll("input")[0]
+const b =document.querySelectorAll("input")[1]
+const add = document.querySelector("#add")
+const multiply =document.querySelector("#multiply")
+const subtract=document.querySelector("#subtract")
+const division=document.querySelector("#division")
+const resultBox = document.querySelector(".result")
 
-const callbackfun = (event) =>
+/*
+const into = () =>
 {
-    body.classList.toggle("dark")
+    const result =parseInt (a.value) * parseInt(b.value)
+    resultBox.innerHTML = result
 }
 
-button.addEventListener("click",callbackfun)
+
+*/
+
+const calculator = (event,operation) =>
+{
+    console.log(event.target)
+    if (operation=="add")
+    {
+        const result=parseInt(a.value)+parseInt(b.value)
+        console.log(result)
+    }
+    else if(operation=="multiply")
+    {
+        const result=parseInt(a.value)*parseInt(b.value)
+        console.log(result)
+    }
+    else if(operation=="subtract")
+    {
+        const result=parseInt(a.value)-parseInt(b.value)
+        console.log(result)
+    }
+    else if(operation=="division")
+    {
+        const result=parseInt(a.value)/parseInt(b.value)
+        console.log(result)
+    }
+}
+add.addEventListener('click',(event) => calculator(event,"add"))
+
+multiply.addEventListener("click",(event) => calculator(event,"multiply"))
+
+subtract.addEventListener("click",(event) => calculator(event,"subtract"))
+
+division.addEventListener("click",(event) => calculator(event,"division"))
