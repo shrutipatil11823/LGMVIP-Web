@@ -1,8 +1,5 @@
-//Filter method
+var arr =[0,1,5,8]
 
-var arr = [2,3,4,5,6]
+arr.splice(1,2)
 
-arr.filter ((element,index) =>{
-    if(element % 2 ==0)
-    console.log(element,index)
-})
+console.log(arr)
