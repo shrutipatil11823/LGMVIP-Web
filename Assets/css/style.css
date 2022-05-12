@@ -17,7 +17,7 @@ body.dark {
 
 header {
     min-height: 300px;
-    background: url('../day.jpeg');
+    background: url('../day.jpg')
     background-size: cover;
     background-position: center;
     transition: 0.3 ease;
@@ -394,7 +394,7 @@ body.dark {
 
 header {
     min-height: 300px;
-    background: url('../day.jpeg');
+    background: url('../day.jpg');
     background-size: cover;
     background-position: center;
     transition: 0.3 ease;
