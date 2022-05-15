@@ -1,0 +1,112 @@
+#header {
+    background-color: #00CCAA;
+    padding: 10px;
+    color: white;
+}
+#heading {
+    font-size:35px;
+}
+#productTable {
+    border-width: 2px;
+    border-color: yellowgreen;
+    padding:0px
+}
+
+#displayTable {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size:30px;
+}
+#OutputTable
+{
+    background-color:yellowgreen;
+    color:white;
+}
+#vertical {
+    border-left: 3px solid #00CCAA;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    text-align: right;
+}
+
+footer {
+    background-color: #00CCAA;
+    text-align: center;
+    color: white;
+    margin-top: 77px;
+}
+
+/* Makes Changes in the odd and even row entries */
+tr:nth-child(even) {
+    background-color: lightgoldenrodyellow;
+    padding: 0 0 0 0;
+    font-size: 13px
+}
+tr:nth-child(odd) {
+    padding: 0 0 0 0;
+    font-size:13px;
+}
+
+
+
+#image {
+    width: 150px;
+}
+
+#newData {
+    border-color:yellowgreen;
+}
+
+/* Fade in Animation for when a student is enrolled */
+.animated {
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+/* Color of the error message */
+#errorMsg{
+    color:red;
+}
+
+* {
+    outline: none;
+}
+
+.message {
+    display: inline-block;
+}
+
+
+
+.email-field:focus:invalid + .message::after {
+    color: red;
+    content: "Invalid email address";
+}
